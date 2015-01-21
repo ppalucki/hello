@@ -1,0 +1,4 @@
+group :test do
+	gom 'github.com/smartystreets/goconvey/convey'
+	gom 'github.com/stretchr/testify/assert'
+end

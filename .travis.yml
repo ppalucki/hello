@@ -1,7 +1,11 @@
-sudo: false
 language: go
-install:
-    - go get golang.org/x/tools/cmd/cover
 go:
     - 1.4
-script: go test ./... -v -cover 
+    - tip
+before_install:
+    - go get github.com/mattn/gom
+    - go get golang.org/x/tools/cmd/cover
+install:
+    - gom install -v ./...
+script: 
+    - gom test  -v -cover ./... 
