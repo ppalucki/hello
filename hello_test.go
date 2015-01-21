@@ -6,7 +6,7 @@ import (
 
 func TestMain(t *testing.T) {
 	got := simple()
-	if got != "hello" {
+	if got != "hello world" {
 		t.Fail()
 	}
 }
