@@ -1,9 +1,9 @@
 package main
 
-func simple() string {
-	return "hello world"
-}
+import (
+	"github.com/ppalucki/hello/lib"
+)
 
 func main() {
-	println(simple())
+	println(hello.Simple())
 }
